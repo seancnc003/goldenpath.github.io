@@ -1,107 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>SCuenco_AdvocacyProject</title>
-    <link href="reset.css" rel="stylesheet" type="text/css" />
-    <link href="styles.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="images/road.png" type="image/x-icon" />
+  <meta charset="UTF-8">
+  <title>Golden Path</title>
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="images/road.png" type="image/x-icon" />
 </head>
 <body>
-
-<!-- Navigation Bar -->
-<header>
+  <!-- Navigation Bar -->
+  <header>
     <nav class="navbar">
-        <div class="nav-left">
-            <img src="images/road.png" alt="Golden Path logo" class="logo">
-            <h1>GoldenPath</h1>
-        </div>
-        <div class="nav-right">
-            <a href="#careers-section" class="nav-link">Careers</a>
-            <a href="#about-section" class="nav-link">About</a>
-            <span class="nav-link">Contact</span>
-            <span class="search-icon">&#x1F50D;</span>
-            <!-- Get Involved Button to scroll to petition section -->
-            <button class="get-involved-btn" onclick="scrollToPetition()">Get Involved</button>
-            <!-- Dark mode toggle button -->
-            <span id="theme-toggle" class="nav-link theme-toggle" onclick="toggleTheme()">&#x1F31E;</span> <!-- Sun emoji initially -->
-        </div>
+      <div class="nav-left">
+        <img src="images/road.png" alt="Golden Path logo" class="logo">
+        <h1>GoldenPath</h1>
+      </div>
+      <div class="nav-right">
+        <a href="#careers-section" class="nav-link">Careers</a>
+        <a href="#about-section" class="nav-link">About</a>
+        <a href="https://www.linkedin.com/in/sean-cnc" class="nav-link" target="_blank">Contact</a>
+        <button class="get-involved-btn" onclick="scrollToPetition()">Get Involved</button>
+        <span id="theme-toggle" class="nav-link theme-toggle" onclick="toggleTheme()">&#x1F31E;</span>
+      </div>
     </nav>
-</header>
+  </header>
 
-<!-- Main Content Sections -->
-<section id="careers-section" class="careers fade-section">
+  <!-- Careers Section -->
+  <section id="careers-section" class="careers fade-section">
     <h2>
-        Careers
-        <img src="images/suitcase.png" alt="Suitcase icon" class="suitcase-icon">
+      Careers
+      <img src="images/suitcase.png" alt="Suitcase icon" class="suitcase-icon">
     </h2>
     <div class="career-grid">
-        <div id="full-stack-engineer" class="career-card">Full-Stack Engineer</div>
-        <div id="nurse-practitioner" class="career-card">Nurse Practitioner</div>
-        <div id="accountant" class="career-card">Accountant</div>
-        <div id="lawyer" class="career-card">Lawyer</div>
-        <div id="electrician" class="career-card">Electrician</div>
-        <div id="actuary" class="career-card">Actuary</div>
+      <!-- Full-Stack Engineer Card -->
+      <div class="career-card">
+        <a href="full-stack-engineer.html">
+          <span class="career-emoji" role="img" aria-label="Laptop">💻</span>
+          <span class="career-title">Full-Stack Engineer</span>
+        </a>
+      </div>
+      <!-- Nurse Practitioner Card -->
+      <div class="career-card">
+        <a href="nurse-practitioner.html">
+          <span class="career-emoji" role="img" aria-label="Stethoscope">🩺</span>
+          <span class="career-title">Nurse Practitioner</span>
+        </a>
+      </div>
+      <!-- Accountant Card -->
+      <div class="career-card">
+        <a href="accountant.html">
+          <span class="career-emoji" role="img" aria-label="Abacus">🧮</span>
+          <span class="career-title">Accountant</span>
+        </a>
+      </div>
+      <!-- Lawyer Card -->
+      <div class="career-card">
+        <a href="lawyer.html">
+          <span class="career-emoji" role="img" aria-label="Scales">⚖️</span>
+          <span class="career-title">Lawyer</span>
+        </a>
+      </div>
+      <!-- Electrician Card -->
+      <div class="career-card">
+        <a href="electrician.html">
+          <span class="career-emoji" role="img" aria-label="Electric Plug">🔌</span>
+          <span class="career-title">Electrician</span>
+        </a>
+      </div>
+      <!-- Actuary Card -->
+      <div class="career-card">
+        <a href="actuary.html">
+          <span class="career-emoji" role="img" aria-label="Bar Chart">📊</span>
+          <span class="career-title">Actuary</span>
+        </a>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- About Section -->
-<section id="about-section" class="about fade-section">
+  <!-- About Section -->
+  <section id="about-section" class="about fade-section">
     <h2>About</h2>
-    <p>Golden Path shows high school students and career changers 
-        the road to achieving their dream careers.</p>
+    <p>Golden Path shows high school students and career changers the road to achieving their dream careers.</p>
     <button class="btn-contact">Contact Us</button>
-</section>
+  </section>
 
-<!-- Petition Section -->
-<section id="petition-section" class="petition-container fade-section">
-    <!-- Call to Action on Left -->
+  <!-- Petition Section -->
+  <section id="petition-section" class="petition-container fade-section">
     <div class="cta">
-        <h2>Help Us Increase Funding for Career Services</h2>
-        <p>Millions of students and career changers lack access to the guidance they need to pursue their desired careers. This petition seeks to increase government funding for career services and resources, enabling better support for individuals across all backgrounds. Your signature can help create more accessible career services, improve job training programs, and ensure equitable opportunities for everyone seeking a fulfilling career. By signing, you join a movement for accessible career pathways and economic empowerment. Let’s work together to build a brighter future.</p>
+      <h2>Help Us Increase Funding for Career Services</h2>
+      <p>
+        Millions of students and career changers lack access to the guidance they need to pursue their desired careers. 
+        This petition seeks to increase government funding for career services and resources, enabling better support for individuals 
+        across all backgrounds. Your signature can help create more accessible career services, improve job training programs, 
+        and ensure equitable opportunities for everyone seeking a fulfilling career. Let’s work together to build a brighter future.
+      </p>
     </div>
-    <!-- Petition Form and Signature List on Right -->
     <div class="petition-form-container">
-        <form id="petition-form">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="city">City:</label>
-            <input type="text" id="city" name="city" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <button type="submit" class="sign-now-btn">Sign Now</button>
-            <p id="error-message" class="error-message"></p>
-        </form>
-        <div class="signatures" id="signature-list">
-            <!-- Signatures will appear here -->
-        </div>
+      <form id="petition-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit" class="sign-now-btn">Sign Now</button>
+        <p id="error-message" class="error-message"></p>
+      </form>
+      <div class="signatures" id="signature-list">
+        <!-- Signatures will appear here -->
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Modal -->
-<div class="modal-overlay"></div>
-<div class="modal">
+  <!-- Modal -->
+  <div class="modal-overlay"></div>
+  <div class="modal">
     <h2 class="modal-message"></h2>
     <img src="images/thank-you.png" alt="Thank You" class="modal-image">
-</div>
+  </div>
 
-<!-- Footer -->
-<footer class="footer">
+  <!-- Footer -->
+  <footer class="footer">
     <div class="footer-content">
-        <p>&copy; 2024 GoldenPath. All Rights Reserved.</p>
-        <div class="footer-links">
-            <a href="https://www.bls.gov/k12/students/careers/career-exploration.htm" target="_blank">Bureau of Labor</a>
-            <a href="https://bigfuture.collegeboard.org/career-search/" target="_blank">College Board</a>
-            <a href="https://joinhandshake.com/" target="_blank">Handshake</a>
-        </div>
-        <button class="btn-subscribe">Subscribe</button>
+      <p>&copy; 2024 GoldenPath. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="https://www.bls.gov/k12/students/careers/career-exploration.htm" target="_blank">Bureau of Labor</a>
+        <a href="https://bigfuture.collegeboard.org/career-search/" target="_blank">College Board</a>
+        <a href="https://joinhandshake.com/" target="_blank">Handshake</a>
+      </div>
+      <button class="btn-subscribe">Subscribe</button>
     </div>
-</footer>
+  </footer>
 
-<!-- Scripts -->
-<script type="text/javascript" src="script.js"></script>
-
+  <!-- Scripts -->
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
