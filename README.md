@@ -51,6 +51,12 @@ Many students and career changers struggle to find engaging and comprehensive re
 - Employed cross-browser best practices, ensuring a consistent, mobile-first design across all devices.
 - Utilized Git for version control and deployed the project using GitHub Pages for seamless public access.
 
+## Resume Bullet Points
+GoldenPath Careers (HTML/CSS/Javascript) | Personal Project
+
+* Developed a responsive career exploration web app with interactivity and embedded industry videos
+* Integrated a dark/light mode toggle and interactive petition form, ensuring an engaging user experience
+
 ## Usage
 
 1. **Clone the Repository:**
