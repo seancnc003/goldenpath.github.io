@@ -1,0 +1,376 @@
+/* General Styles */
+body {
+    font-family: Monospace, monaco;
+    line-height: 1.6;
+    padding: 1em;
+    background-color: white;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgrey;
+    width: 100%;
+    padding: 0.075rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.nav-left h1 {
+    font-size: 1.5rem;
+}
+
+.nav-right {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.search-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.get-involved-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Dark Mode Toggle Button */
+.theme-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-left: 1rem;
+}
+
+/* Light and Dark Mode Styles */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Adjusting background and text color for sections in dark mode */
+.navbar.dark-mode, .career-card.dark-mode, .about.dark-mode, .footer.dark-mode, .petition-container.dark-mode {
+    background-color: #333;
+    color: #ffffff;
+}
+
+/* Petition Section in Dark Mode */
+.petition-container.dark-mode .cta,
+.petition-container.dark-mode .petition-form-container {
+    color: #ffffff;
+}
+
+input.dark-mode,
+textarea.dark-mode {
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+input.dark-mode::placeholder {
+    color: #bbb;
+}
+
+.sign-now-btn.dark-mode {
+    background-color: #444;
+    color: #ffffff;
+}
+
+.nav-link.dark-mode {
+    color: #ffffff;
+}
+
+.nav-link.dark-mode:hover {
+    color: #ffcc00;
+}
+
+button.dark-mode {
+    background-color: #444;
+    color: #ffffff;
+}
+
+button.dark-mode:hover {
+    background-color: #555;
+}
+
+/* Careers Section */
+.careers {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.careers h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the content horizontally */
+}
+
+
+.suitcase-icon {
+    width: 3rem;
+    height: auto;
+    margin-left: 0.75rem; /* adjust margin as needed */
+    vertical-align: middle;  /* This aligns the icon with the text */
+}
+
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
+}
+
+.career-card {
+    background-color: lightgrey;
+    padding: 3rem;
+    width: calc(75% - 2rem);
+    height: calc(75% - 2rem);
+    border-radius: 8px;
+    aspect-ratio: 1 / 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.career-card:hover {
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+    padding: 2rem;
+    background-color: lightsteelblue;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+.footer {
+    bottom: 0;
+    width: 100%;
+    background-color: lightgrey;
+    padding: 1rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.footer p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #0056b3;
+}
+
+.btn-contact {
+    margin-top: 1rem;
+}
+
+.btn-subscribe {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Petition Section Layout */
+.petition-container {
+    display: flex;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.cta {
+    flex: 1;
+    padding-right: 2rem;
+    text-align: left;
+}
+
+.petition-form-container {
+    flex: 1;
+    padding-left: 2rem;
+    border-left: 2px solid #ddd;
+}
+
+.signatures {
+    margin-top: 1rem;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 0.5rem;
+    border-top: 1px solid #ddd;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+input.invalid {
+    border: 2px solid red;
+}
+
+.sign-now-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/* Base styles for fade-in/out animation */
+.fade-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When the section is visible in the viewport */
+.fade-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Modal overlay for dimming the background */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Modal content */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Modal message styling */
+.modal-message {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Image animation: grows and resets in a loop */
+@keyframes grow-reset {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.modal-image {
+    width: 100px;
+    height: 100px;
+    animation: grow-reset 2s infinite;
+}
+
+
+/* Modal in Dark Mode */
+.modal.dark-mode {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.modal-message.dark-mode {
+    color: #ffffff;
+}
